@@ -25,7 +25,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## vscode插件
 - eslint
-- vetur
+- vetur vue单文件 template下必须是单标签，vue3中不需要
 
 ## 基础样式集成及开发模拟器的使用
 npm install normalize.css --save 固定版本 npm install normalize.css@8.0.1 --save
@@ -33,6 +33,8 @@ style中统一管理样式文件，并在main.js引入主文件
 - index.scss
 - base.scss
 - iconfont.css 使用在线unicode形式
+- viriables.scss 样式变量 颜色
+- mixins.scss 样式片段 省略号
 设置chrome控制台，在模拟器 iphone6下开发
 
 如何设置字体10px(chrome浏览器默认字体最小是12px)
