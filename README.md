@@ -28,6 +28,21 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 - vetur
 
 ## 基础样式集成及开发模拟器的使用
-npm install normalize.css --save 固定版本 npm install normalize.css@8.0.1 --save 
-main.js中引入，创建style/base.scss 并在main.js引入
+npm install normalize.css --save 固定版本 npm install normalize.css@8.0.1 --save
+style中统一管理样式文件，并在main.js引入主文件
+- index.scss
+- base.scss
+- iconfont.css 使用在线unicode形式
 设置chrome控制台，在模拟器 iphone6下开发
+
+如何设置字体10px(chrome浏览器默认字体最小是12px)
+```css
+.title {
+    font-size: 20px;
+    transform: scale(.5, .5);
+    transform-origin: center top;
+}
+```
+
+BEM(block element Modifier) css命名规则  block_element--Modifier(表状态)  block 块
+如何看待 CSS 中 BEM 的命名方式？  https://www.zhihu.com/question/21935157
