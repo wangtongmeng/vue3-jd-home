@@ -82,5 +82,22 @@ router.beforeEach 做登录校验
 
 封装出post方法，基础路径 'Content-Type': 'application/json'，减少一层嵌套 res.data
 
+
+## mock
+fastmock
 ## 通用组件
 Toast
+
+
+通过代码拆分增加逻辑可维护性
+
+## input不显示旧密码 autocomplete
+```html
+<input
+    type="password"
+    class="wrapper__input__content"
+    placeholder="请输入密码"
+    autocomplete="new-password"
+    v-model="password"
+/>
+```
