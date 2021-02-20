@@ -27,6 +27,9 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 - eslint
 - vetur vue单文件 template下必须是单标签，vue3中不需要
 
+## chrome插件
+- vue.js devtools
+
 ## 基础样式集成及开发模拟器的使用
 npm install normalize.css --save 固定版本 npm install normalize.css@8.0.1 --save
 style中统一管理样式文件，并在main.js引入主文件
@@ -39,6 +42,8 @@ style中统一管理样式文件，并在main.js引入主文件
 
 BEM(block element Modifier) css命名规则  block_element--Modifier(表状态)  block 块
 如何看待 CSS 中 BEM 的命名方式？  https://www.zhihu.com/question/21935157
+
+组件style+scoped 避免样式冲突
 
 ## 小技巧
 
