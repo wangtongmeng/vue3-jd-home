@@ -81,3 +81,6 @@ router.beforeEach 做登录校验
 ## 封装axios
 
 封装出post方法，基础路径 'Content-Type': 'application/json'，减少一层嵌套 res.data
+
+## 通用组件
+Toast
