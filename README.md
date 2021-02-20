@@ -37,7 +37,12 @@ style中统一管理样式文件，并在main.js引入主文件
 - mixins.scss 样式片段 省略号
 设置chrome控制台，在模拟器 iphone6下开发
 
-如何设置字体10px(chrome浏览器默认字体最小是12px)
+BEM(block element Modifier) css命名规则  block_element--Modifier(表状态)  block 块
+如何看待 CSS 中 BEM 的命名方式？  https://www.zhihu.com/question/21935157
+
+## 小技巧
+
+### 如何设置字体10px(chrome浏览器默认字体最小是12px)
 ```css
 .title {
     font-size: 20px;
@@ -45,6 +50,15 @@ style中统一管理样式文件，并在main.js引入主文件
     transform-origin: center top;
 }
 ```
-
-BEM(block element Modifier) css命名规则  block_element--Modifier(表状态)  block 块
-如何看待 CSS 中 BEM 的命名方式？  https://www.zhihu.com/question/21935157
+### position:relative;经常用于微调位置
+### 根据图片比例设置占位，防止图片加载完成前的塌陷问题
+```scss
+.banner {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 25.4%;
+  &__img {
+    width: 100%;
+  }
+}
+```
