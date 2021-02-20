@@ -45,6 +45,14 @@ BEM(block element Modifier) css命名规则  block_element--Modifier(表状态) 
 
 组件style+scoped 避免样式冲突
 
+
+## 登录校验
+router.beforeEach 做登录校验
+登录操作后，将记录登录标识isLogin在localStorage
+如果没有登录,访问其他页面跳转login页，访问login页直接next()
+如果已经登录，其他页面直接next()，访问login页跳转home页(也可配置在路由配置选项beforeEnter中)
+
+
 ## 小技巧
 
 ### 如何设置字体10px(chrome浏览器默认字体最小是12px)
