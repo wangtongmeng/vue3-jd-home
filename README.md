@@ -85,8 +85,9 @@ router.beforeEach 做登录校验
 
 ## mock
 fastmock
-## 通用组件
-Toast
+## 通用组件及复用组件
+通用组件：Toast
+复用组件：ShopInfo
 
 
 通过代码拆分增加逻辑可维护性
@@ -101,3 +102,8 @@ Toast
     v-model="password"
 />
 ```
+
+
+## 路由懒加载提高首屏加载速度
+
+## rem
